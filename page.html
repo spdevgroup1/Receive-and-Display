@@ -1,0 +1,6 @@
+<p id="target">Default text</p>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const msg = params.get('message');
+  if (msg) document.getElementById('target').textContent = msg;
+</script>
